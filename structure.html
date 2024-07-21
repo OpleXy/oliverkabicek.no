@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="structrure.css">
+</head>
+
+<body>
+    <script src="index.js"></script>
+
+    <div class="toolbarMainDiv">
+
+        <div class="toolbarMainContent">
+
+            <div class="tools">
+                <p class="toolTag">Limit:</p>
+                <input type="radio" name="lim" id="Limit">
+                <p class="toolTag">No Limit:</p>
+                <input type="radio" name="lim" id="noLimit">
+                <p class="toolTag">Background:</p>
+                <input type="color" id="colorPicker_bg" value="#faebd7">
+                <p class="toolTag">Line:</p>
+                <input type="color" id="colorPicker_line">
+                <p class="toolTag">Interval:</p>
+                <input type="number" id="numberInput" name="numberInput" min="1" max="10">
+            </div>
+
+            <p class="toolTag">TimeSculpt</p>
+
+            <div class="loginOrSignUp">
+                <input type="text" placeholder="Email" class="emailInput">
+                <input type="text" placeholder="Password" class="passwordInput">
+                <button class="loginBtn">Log in</button>
+                <p class="toolTag">-or-</p>
+                <button class="signBtn">Sign up</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="mainDiv">
+        <p></p>
+        <!--left div-->
+        <div class="subDiv1">
+
+            <div class="folderSystemDiv">
+                <button class="mainFolder">folder 1</button>
+                <button class="subFolder">folder 2</button>
+                <button class="mainFile">file 1</button>
+                <button class="subFile">file 2</button>
+
+
+                <br><br>
+                <p>Impelmentasjon:</p>
+                <button class="mainFolder">Mitt liv</button>
+                <button class="mainFile">Livshistorie</button></b>
+                <button class="subFile">Oppvekst</button>
+                <button class="subFile">Ungdomsskolen</button>
+                <button class="mainFolder">Vidregående</button>
+                <button class="subFolder">Pensum Historie</button>
+                <button class="mainFile">2. verdenskrig</button>
+                <button class="subFile">Norge underkrigen</button>
+                <button class="subFile">Tyskland under krigen</button>
+                <button class="subFile">Hitlers liv</button>
+            </div>
+            <p class="markup">Folders</p>
+        </div>
+
+
+        <!--middle div-->
+        <div class="subDiv2" id="colorBox">
+            <!--first under div
+            <div class="subDiv2-1">
+
+
+                <p class="markup">Space/search/tools</p>
+            </div>-->
+            <!--Adder-->
+            <div class="timelineMain">
+                <div class="timelineSub1">
+                    <input type="text" placeholder="Title" class="timelineTitleInput" id="timelineTitleID"><br>
+                </div>
+
+                <div class="timelineSub2">
+                    <input type="number" class="timelineDateInput" placeholder="Start Year" id="timelineDateInput1">
+                    <input type="number" class="timelineDateInput" placeholder="End Year" id="timelineDateInput2">
+                </div>
+                <div class="timelineSub3">
+                    <button class="timelineSubmit" id="timelineMake">Create Timeline</button>
+                </div>
+            </div>
+
+            <!--Adder end-->
+            <p id="systemError"></p>
+            <!--"arket"-->
+            <div class="timelineCase">
+                <!--"innholdet på arket"-->
+                <div id="outupDiv" class="innholdDiv">
+                    <p id="outputTitle"></p>
+                    <div id="timelineLine" class="line"></div>
+                    <div class="timelineNumbers">
+                        <p id="outputStart"></p>
+                        <p id="outputEnd"></p>
+                    </div>
+                </div>
+            </div>
+            <!--3. under div
+            <div class="subDiv2-3">
+                <p class="markup">Merge section</p>
+            </div>
+            -->
+        </div>
+
+
+
+        <!--right div-->
+        <div class="subDiv3">
+            <div class="mainAddDiv">
+                <div class="addDiv">
+                    <input type="text" class="addTitle" placeholder="Title">
+                    <button class="addButton">ADD</button>
+                </div>
+
+                <!--Date-->
+                <div class="dateDivSection">
+                    <!--Date start-->
+                    <input type="date" id="addStartDate" class="dateAddInput1">
+                    <!--Date end-->
+                    <input type="date" id="addEndDate" class="dateAddInput2">
+                </div>
+
+                <textarea id="addDescriptionInput" class="descriptionInput" placeholder="Description"></textarea>
+            </div>
+            <p class="markup">Already added time moments</p>
+
+
+        </div>
+    </div>
+</body>
+
+
+
+</html>

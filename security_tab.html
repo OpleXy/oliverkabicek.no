@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Pin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Enter pin:</h1>
+        <form id="pinForm">
+            <input type="password" id="pin" name="pin" maxlength="4" required>
+            <button type="submit">Enter</button>
+        </form>
+    </div>
+    <script>
+        function encodePin(pin)
+        {
+            // Simple encoding function (not secure, just obfuscation)
+            return btoa(pin); // Base64 encoding
+        }
+
+        document.getElementById('pinForm').addEventListener('submit', function (event)
+        {
+            event.preventDefault();
+            const pin = document.getElementById('pin').value;
+            const encodedCorrectPin = 'NzQ4Ng=='; // Base64 encoded version of '7486'
+            if (encodePin(pin) === encodedCorrectPin)
+            {
+                window.location.href = 'structure.html';
+            } else
+            {
+                alert('Incorrect pin.');
+            }
+        });
+    </script>
+</body>
+
+</html>

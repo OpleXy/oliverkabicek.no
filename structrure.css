@@ -1,0 +1,375 @@
+body {
+    background-color: rgb(234, 234, 234);
+
+}
+
+p,
+input,
+:placeholder-shown {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 0px;
+    font-size: 17px;
+    outline: none;
+}
+
+button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+
+}
+
+
+
+
+
+
+
+
+
+.toolbarMainDiv {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 4px;
+
+}
+
+.toolbarMainContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginOrSignUp,
+.tools {
+    display: flex;
+    gap: 0.5em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emailInput,
+.passwordInput,
+.loginBtn,
+.signBtn {
+    height: 80%;
+    border: none;
+}
+
+.emailInput {}
+
+.passwordInput {}
+
+.loginBtn {}
+
+.signBtn {}
+
+.toolTag {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainDiv {
+    display: flex;
+    background-color: rgb(255, 0, 217);
+    height: 800px;
+    width: 100%;
+
+}
+
+:root {
+    --borderColor: #aeaeae;
+    --diBg: rgb(243, 243, 243);
+    --shadow: 2px 2px #00000013;
+}
+
+.subDiv1 {
+    background-color: var(--diBg);
+    flex: 0.20;
+    height: 100%;
+    border: 1px solid var(--borderColor);
+    padding: 2px;
+
+}
+
+.subDiv2 {
+    display: flex;
+    /* Add this line to enable flexbox */
+    flex: 0.60;
+    height: 100%;
+    border: 1px solid var(--borderColor);
+    padding: 2px;
+    background-color: #faebd7;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.subDiv3 {
+    background-color: var(--diBg);
+    flex: 0.20;
+    height: 100%;
+    border: 1px solid var(--borderColor);
+    padding: 2px;
+
+}
+
+
+.folderSystemDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin: 8px;
+}
+
+.mainFolder {
+    background-color: rgb(255, 168, 62);
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 90%;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+
+}
+
+.subFolder {
+    background-color: rgb(255, 196, 124);
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 80%;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+
+}
+
+.mainFile {
+    background-color: rgb(120, 161, 255);
+    border: none;
+    font-size: 0.8rem;
+    width: 65%;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+
+}
+
+.subFile {
+    background-color: rgb(167, 194, 255);
+    border: none;
+    font-size: 0.8rem;
+    width: 50%;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+
+}
+
+/*
+.subDiv2-1 {
+    background-color: var(--diBg);
+    height: 10%;
+    border: 1px solid var(--borderColor);
+}
+*/
+.subDiv2-2 {
+    background-color: var(--diBg);
+    height: 80%;
+}
+
+/*
+.subDiv2-3 {
+    background-color: var(--diBg);
+    height: 9%;
+    border: 1px solid var(--borderColor);
+
+}
+*/
+
+
+
+/*med gul knapp*/
+.timelineMain {
+    margin-top: 10px;
+    width: 90%;
+    background-color: rgb(177, 177, 177);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.153);
+}
+
+.timelineSub1,
+.timelineSub2,
+.timelineSub3 {
+    display: flex;
+    height: 2.5rem;
+}
+
+.timelineSub1 {
+    flex-grow: 0.5;
+
+
+}
+
+.timelineSub2 {
+    flex-grow: 0.5;
+
+}
+
+.timelineSub3 {}
+
+
+
+.timelineDateInput {
+    width: 50%;
+    border: none;
+    /*               må endres       */
+    padding: 7px;
+
+}
+
+.timelineTitleInput {
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: rgb(104, 104, 104);
+    border-width: 1px;
+    padding: 7px;
+    outline: none;
+
+}
+
+.timelineSubmit {
+    font-weight: bold;
+    color: white;
+    background-color: forestgreen;
+    border: none;
+    width: 100%;
+
+}
+
+.timelineCase {
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+
+.innholdDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 20px;
+}
+
+.line {
+    width: 100%;
+    background-color: black;
+    height: 2px;
+    width: calc(100% - 40px);
+    background-color: black;
+    height: 2px;
+    margin: 10px 0;
+
+}
+
+.timelineNumbers {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mainAddDiv {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.addDiv {
+    display: flex;
+    border: 1px solid rgb(207, 207, 207);
+}
+
+.addTitle {
+    flex: 1.6;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: 22px;
+    border: none;
+}
+
+.addButton {
+    flex: 0.4;
+    background-color: forestgreen;
+    color: white;
+    font-weight: bold;
+
+}
+
+.addButton:hover {
+    background-color: rgb(60, 177, 85);
+}
+
+.addButton:active {
+    background-color: rgb(101, 172, 116);
+}
+
+.dateDivSection {
+    display: flex;
+    margin: 0;
+    border: 1px solid rgb(207, 207, 207);
+}
+
+
+.dateAddInput1,
+.dateAddInput2 {
+    width: 100%;
+    border-width: 1px;
+
+}
+
+.dateAddInput1 {
+    border: none;
+}
+
+.dateAddInput2 {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+
+.descriptionInput {
+    width: 100%;
+    min-height: 50px;
+    resize: vertical;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0;
+}
